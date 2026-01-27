@@ -102,3 +102,10 @@ weetabix.online
 8aev.com
 cccrystalfarm.com
 david-dell.com
+api.dragonplatform.net
+xmpp.itsm-us1.comodo.com
+mdmsupport.cmdm.comodo.com
+plugins.itsm-us1.comodo.com
+rmm-api.itsm-us1.comodo.com
+samkramankra-msp.itsm-us1.comodo.com
+xp3mando.com
