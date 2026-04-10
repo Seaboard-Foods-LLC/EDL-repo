@@ -1,15 +1,20 @@
-# 🛡️ SBD Threat Blocklists
+# 🛡️ Threat Blocklists
 
-## Files
+## blocklist.txt
 
-- **`blocklist.txt`**  
-  A plain-text list of IP addresses identified as malicious or suspicious. Intended for use in firewalls and security platforms that support IP-based blocking.
+A plain‑text **IP Address External Dynamic List (EDL)** containing IPv4 and/or IPv6 addresses and CIDR ranges associated with malicious or untrusted activity.  
+This file is intended for **IP‑based enforcement** in Palo Alto Networks firewalls and is commonly referenced in Security Policies to block or restrict traffic based on **source or destination IP address**, independent of application or encryption.
 
-- **`domains.txt`**  
-  A plain-text list of domains associated with threats such as malware, phishing, or command-and-control activity. Suitable for use in DNS filtering, anti-spyware profiles, or URL filtering systems.
+---
 
-## Usage
+## domains.txt
 
-These lists can be integrated into security tools such as Palo Alto Networks firewalls via External Dynamic Lists (EDLs), or used in custom automation workflows for threat prevention.
+A plain‑text **Domain External Dynamic List (EDL)** containing fully qualified domain names (FQDNs) associated with threats such as malware, phishing, or command‑and‑control infrastructure.  
+This list enables **domain‑based enforcement** using DNS resolution, TLS SNI, or hostname inspection, and is well‑suited for blocking cloud‑hosted or frequently changing threat infrastructure where IP addresses are not stable.
 
-> ⚠️ Ensure you validate and sanitize the lists before deployment to avoid false positives or unintended blocks.
+---
+
+## urlblocklist.txt
+
+A plain‑text **URL External Dynamic List (EDL)** evaluated by the **URL Filtering engine** to block web destinations based on hostname and, optionally, URL path.  
+Entries may be full URLs or bare FQDNs, allowing **application‑layer (Layer 7) enforcement** and enabling granular control of web traffic, including selective blocking of specific content hosted under a domain.
